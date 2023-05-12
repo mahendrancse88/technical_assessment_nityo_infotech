@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "noImplicitAny": false,
+    "sourceMap": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "target": "es5",
+    "jsx": "react",
+    "allowJs": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "typeRoots": [
+      "./node_modules/@types/"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@store/*": ["src/store/*"],
+      "@components/*": ["src/components/*"],
+      "@containers/*": ["src/containers/*"],
+      "@config": ["src/configs/index.ts"],
+      "@common/*": ["src/common/*"],
+      "@hooks/*": ["src/hooks/*"],
+      "~/*": ["src/*"],
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "presets": [
+    ["@babel/preset-env", {
+      "useBuiltIns": "entry",
+      "corejs": "3.6"
+    }],
+    "@babel/preset-typescript",
+    "@babel/preset-react"
+  ],
+  // @WARN: Babel not picking this up hence setting up in webpack bable-loader options instead until this get fixed.
+  "ignore": ["node_modules"]
+}
